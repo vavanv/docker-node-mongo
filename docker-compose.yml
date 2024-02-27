@@ -7,9 +7,9 @@ services:
     ports:
       - "80:3000"
     external_links:
-      - mongo
-  mongo:
-    container_name: mongo
+      - mongo_db_test
+  mongo_db_test:
+    container_name: mongo_db_test
     image: mongo
     ports:
       - "27017:27017"
